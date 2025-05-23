@@ -94,42 +94,6 @@ export const DadosNotificacao = styled.div`
   }
 `;
 
-export const Resposta = styled.div`
-  h4 {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0%;
-  }
-
-  .buttons {
-    display: flex;
-    gap: 12px;
-
-    button {
-      padding-top: 8.19px;
-      padding-right: 13.11px;
-      padding-bottom: 8.19px;
-      padding-left: 13.11px;
-      gap: 6.56px;
-      border-radius: 3.28px;
-      font-size: 14px;
-      border: none;
-      cursor: pointer;
-    }
-
-    .nao {
-      background-color: #e0e0e0;
-    }
-
-    .sim {
-      background-color: #003366;
-      color: #fff;
-    }
-  }
-
-`;
-
 export const ColunaInformativa = styled.div`
 gap: 13.11px;
 border-radius: 8.19px;

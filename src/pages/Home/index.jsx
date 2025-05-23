@@ -1,8 +1,10 @@
-import { Container, ConteudoPrincipal, CaixaEsquerda, CaixaDireita, Header, CaixaNotificacao, DadosNotificacao, Resposta, ColunaInformativa } from './styles';
+import { Container, ConteudoPrincipal, CaixaEsquerda, CaixaDireita, Header, CaixaNotificacao, DadosNotificacao, ColunaInformativa } from './styles';
 import InfoImage from '../../assets/images/info-image.jpg';
-import Button from 'react-bootstrap/Button';
+import dadosNotificacao from '../../data/dados.json';
+import RespostaNIP from "../../components/RespostaNIP"
 
 const Home = () => {
+
   return (
     <Container>
       <ConteudoPrincipal>
@@ -18,27 +20,22 @@ const Home = () => {
             <DadosNotificacao>
               <div>
                 <strong>Beneficiário</strong>
-                <p>Leandro Henrique</p>
+                <p>{dadosNotificacao.beneficiario}</p>
               </div>
               <div>
                 <strong>Interlocutor</strong>
-                <p>Leandro Henrique</p>
+                <p>{dadosNotificacao.interlocutor}</p>
               </div>
               <div>
                 <strong>Data de abertura</strong>
-                <p>29/01/2022</p>
+                <p>{dadosNotificacao.dataAbertura}</p>
               </div>
             </DadosNotificacao>
             <div className="divider" />
           </CaixaNotificacao>
 
-          <Resposta>
-            <h4>Reconhece esta NIP?</h4>
-            <div className="buttons">
-              <button className="nao">Não reconheço</button>
-              <button className="sim">Sim, foi aberto por mim</button>
-            </div>
-          </Resposta>
+          <RespostaNIP />
+
         </CaixaEsquerda>
 
         <CaixaDireita>
