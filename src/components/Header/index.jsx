@@ -1,6 +1,7 @@
 import { Container, Row, Col, Button, InputGroup, FormControl } from 'react-bootstrap';
 import { FaFacebookF, FaInstagram, FaLinkedin, FaSearch } from 'react-icons/fa';
 import ImgLogo from "../../assets/images/logo/web-logo-cassi.svg";
+import IconTelessaude from "../../assets/icons/icon-telessaude.svg"; 
 
 function Header() {
   return (
@@ -20,7 +21,8 @@ function Header() {
                 borderRadius: '4px',
                 overflow: 'hidden',
                 border: '1px solid #ced4da',
-                backgroundColor: 'white'
+                backgroundColor: 'white',
+                height: '44px'
               }}
             >
               <InputGroup.Text
@@ -29,6 +31,8 @@ function Header() {
                   border: 'none',
                   paddingLeft: '10px',
                   paddingRight: '6px',
+                  display: 'flex',
+                  alignItems: 'center'
                 }}
               >
                 <FaSearch size={16} />
@@ -39,33 +43,54 @@ function Header() {
                 placeholder="Faça sua busca aqui"
                 style={{
                   border: 'none',
-                  fontSize: '0.85rem',
-                  paddingTop: '6px',
-                  paddingBottom: '6px',
-                  backgroundColor: 'transparent'
+                  fontSize: '14px',
+                  backgroundColor: 'transparent',
+                  padding: '0 8px',
+                  display: 'flex',
+                  alignItems: 'center'
                 }}
               />
             </InputGroup>
           </Col>
 
           <Col xs="12" md="auto" className="d-flex align-items-center justify-content-center justify-content-md-start">
-            <span className="me-2" style={{ fontSize: '0.8rem' }}>
+            <span className="me-2" style={{ fontSize: '14px' }}>
               Siga a CASSI nas redes sociais:
             </span>
             <div className="d-flex gap-2">
-              <span className="rounded-circle text-white d-flex align-items-center justify-content-center"
-                    style={{ width: 30, height: 30, backgroundColor: '#003366' }}>
-                <FaFacebookF size={14} />
-              </span>
-              <span className="rounded-circle text-white d-flex align-items-center justify-content-center"
-                    style={{ width: 30, height: 30, backgroundColor: '#003366' }}>
-                <FaLinkedin size={14} />
-              </span>
-              <span className="rounded-circle text-white d-flex align-items-center justify-content-center"
-                    style={{ width: 30, height: 30, backgroundColor: '#003366' }}>
-                <FaInstagram size={14} />
-              </span>
+              <a href="https://www.facebook.com/CASSISAUDEBR" target="_blank" rel="noopener noreferrer">
+                <span className="rounded-circle text-white d-flex align-items-center justify-content-center"
+                      style={{ width: 30, height: 30, backgroundColor: '#003366', cursor: 'pointer' }}>
+                  <FaFacebookF size={14} />
+                </span>
+              </a>
+              <a href="https://www.instagram.com/cassi.saude/" target="_blank" rel="noopener noreferrer">
+                <span className="rounded-circle text-white d-flex align-items-center justify-content-center"
+                      style={{ width: 30, height: 30, backgroundColor: '#003366', cursor: 'pointer' }}>
+                  <FaInstagram size={14} />
+                </span>
+              </a>
+              <a href="https://www.linkedin.com/company/cassi" target="_blank" rel="noopener noreferrer">
+                <span className="rounded-circle text-white d-flex align-items-center justify-content-center"
+                      style={{ width: 30, height: 30, backgroundColor: '#003366', cursor: 'pointer' }}>
+                  <FaLinkedin size={14} />
+                </span>
+              </a>
             </div>
+          </Col>
+
+          <Col xs="12" md="auto" className="d-flex justify-content-center justify-content-md-start">
+            <Button
+              variant="outline"
+              className="d-flex align-items-center border-0 p-0"
+              style={{ backgroundColor: 'transparent', color: '#003366' }}
+            >
+              <img src={IconTelessaude} alt="Telessaúde" height="32" className="me-2" />
+              <div className="text-start" style={{ fontSize: '14px', lineHeight: '1.2' }}>
+                <div className="fw-semibold">Telessaúde</div>
+                <div>Acesse Aqui</div>
+              </div>
+            </Button>
           </Col>
 
           <Col xs="12" md="auto" className="d-flex justify-content-center justify-content-md-end">
@@ -74,7 +99,7 @@ function Header() {
               style={{
                 backgroundColor: '#003366',
                 borderColor: '#003366',
-                fontSize: '0.8rem',
+                fontSize: '16px',
                 padding: '0.35rem 1rem'
               }}
             >
