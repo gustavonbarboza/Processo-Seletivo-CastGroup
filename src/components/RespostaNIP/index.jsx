@@ -4,7 +4,7 @@ import { Resposta, Finalizacao, ModalConfig } from './styles';
 import dadosNotificacao from '../../data/dados.json';
 import { FaCheckCircle } from 'react-icons/fa';
 
-const RespostaNIP = () => {
+function RespostaNIP() {
   const [etapa, setEtapa] = useState('perguntaInicial'); 
   const [mostrarModal, setMostrarModal] = useState(false);
   const [mostrarAlerta, setMostrarAlerta] = useState('');
