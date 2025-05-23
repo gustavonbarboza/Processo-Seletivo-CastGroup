@@ -1,24 +1,30 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-gap: 40px;
-padding-top: 40px;
-padding-right: 80px;
-padding-bottom: 40px;
-padding-left: 80px;
+  padding: 24px;
+
+@media (min-width: 768px) {
+    padding: 40px 80px;
+  }
 
 `;
 
 export const ConteudoPrincipal = styled.div`
-  display: flex;
-  align-items: flex-start;
+  display: block;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+  }
 `;
 
 export const CaixaEsquerda = styled.div`
   flex: 2;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 24px;
   border-radius: 8.19px;
   padding: 24px;
 `;
@@ -27,27 +33,21 @@ export const CaixaDireita = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 13.11px;
+  gap: 24px;
   border-radius: 8.19px;
   padding: 24px;
 `;
 
 export const Header = styled.div`
-gap: 8px;
-
   h3 {
     font-weight: 700;
     font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 0%;
     color: #002D4B;
   }
 
   p {
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0%;
   }
 `;
 
@@ -58,8 +58,6 @@ export const CaixaNotificacao = styled.div`
   h4 {
     font-weight: 700;
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0%;
     vertical-align: middle;
     color: #002D4B;
   }
@@ -77,7 +75,7 @@ export const DadosNotificacao = styled.div`
   gap: 32px;
 
   div {
-    flex: 1 1 45%;
+    flex: 1 1 40%;
     min-width: 200px;
     height: 52px;
     border-radius: 4px;
@@ -101,15 +99,12 @@ border-radius: 8.19px;
   h3 {
     font-weight: 700;
     font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 0%;
     color: #002D4B;
   }
 
   img {
   display: block;
   width: 100%;
-  max-width: 100%;
   height: auto;
   border-radius: 8px;
   margin: 16px 0;
@@ -118,7 +113,5 @@ border-radius: 8.19px;
   p {
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0%;
   }
 `;

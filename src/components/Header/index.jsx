@@ -10,7 +10,9 @@ function Header() {
         <Row className="align-items-center justify-content-between flex-wrap px-3 gap-3 gap-md-0">
 
           <Col xs="12" md="auto" className="text-center text-md-start">
-            <img src={ImgLogo} alt="CASSI" height="48" />
+            <a href="#" target="_blank">
+              <img src={ImgLogo} alt="CASSI" height="48" />
+            </a>
           </Col>
 
           <Col xs="12" md="auto" className="d-flex justify-content-center justify-content-md-start">

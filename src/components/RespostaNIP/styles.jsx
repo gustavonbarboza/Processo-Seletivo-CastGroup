@@ -5,7 +5,6 @@ export const Resposta = styled.div`
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0%;
   }
 
   .buttons {
@@ -13,11 +12,7 @@ export const Resposta = styled.div`
     gap: 12px;
 
     button {
-      padding-top: 8.19px;
-      padding-right: 13.11px;
-      padding-bottom: 8.19px;
-      padding-left: 13.11px;
-      gap: 6.56px;
+      padding: 8.19px 13.11px;
       border-radius: 3.28px;
       font-size: 14px;
       border: none;
@@ -41,18 +36,17 @@ export const Finalizacao = styled.div`
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: 0%;
-    vertical-align: middle;
     display: flex;
     align-items: center;
     gap: 8px;
   }
-    .divider {
+
+  .divider {
     width: 100%;
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 16px;
   }
-`
+`;
 
 export const ModalConfig = styled.div`
   h4 {
@@ -78,10 +72,10 @@ export const ModalConfig = styled.div`
   }
 
   input[readonly] {
-  background-color: #e9ecef;
-  color: #495057;
-  cursor: not-allowed;
-}
+    background-color: #e9ecef;
+    color: #495057;
+    cursor: not-allowed;
+  }
 
   button {
     padding: 8px 16px;
