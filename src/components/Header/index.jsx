@@ -13,14 +13,37 @@ function Header() {
           </Col>
 
           <Col xs="12" md="auto" className="d-flex justify-content-center justify-content-md-start">
-            <InputGroup size="sm" style={{ maxWidth: '250px' }}>
-              <InputGroup.Text>
-                <FaSearch size={14} />
+            <InputGroup
+              size="sm"
+              style={{
+                maxWidth: '250px',
+                borderRadius: '4px',
+                overflow: 'hidden',
+                border: '1px solid #ced4da',
+                backgroundColor: 'white'
+              }}
+            >
+              <InputGroup.Text
+                style={{
+                  backgroundColor: 'transparent',
+                  border: 'none',
+                  paddingLeft: '10px',
+                  paddingRight: '6px',
+                }}
+              >
+                <FaSearch size={16} />
               </InputGroup.Text>
+
               <FormControl
                 type="search"
                 placeholder="Faça sua busca aqui"
-                style={{ fontSize: '0.85rem' }}
+                style={{
+                  border: 'none',
+                  fontSize: '0.85rem',
+                  paddingTop: '6px',
+                  paddingBottom: '6px',
+                  backgroundColor: 'transparent'
+                }}
               />
             </InputGroup>
           </Col>

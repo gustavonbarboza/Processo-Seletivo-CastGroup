@@ -2,7 +2,7 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 function MainNav() {
   return (
-    <Navbar bg="light" expand="lg" className="border-bottom">
+    <Navbar bg="light" expand="lg" className="border-bottom bg-transparent">
       <Container fluid>
         <Navbar.Toggle aria-controls="main-navbar" />
         <Navbar.Collapse id="main-navbar">
