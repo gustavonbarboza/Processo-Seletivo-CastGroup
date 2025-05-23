@@ -1,6 +1,6 @@
 # 🩺 Projeto Frontend - CASSI Notificação de Intermediação Preliminar (NIP)
 
-Este repositório apresenta uma aplicação React desenvolvida como parte de um processo seletivo da **CASSI**. O objetivo foi transformar um protótipo do Figma em uma interface funcional, responsiva e fiel ao design original, utilizando **React.js** com **Bootstrap**.
+Este projeto foi feito para uma aplicação React desenvolvida como parte de um processo seletivo. O objetivo foi transformar um protótipo do Figma em uma interface funcional, responsiva e fiel ao design original, e foi utilizado **React.js** e **Bootstrap**.
 
 ---
 
