@@ -1,16 +1,16 @@
-# 🩺 Projeto Frontend - CASSI Notificação de Intermediação Preliminar (NIP)
+# Projeto Frontend - CASSI Notificação de Intermediação Preliminar (NIP)
 
 Este projeto foi feito para uma aplicação React desenvolvida como parte de um processo seletivo. O objetivo foi transformar um protótipo do Figma em uma interface funcional, responsiva e fiel ao design original, e foi utilizado **React.js** e **Bootstrap**.
 
 ---
 
-## 📌 Visão Geral
+## Visão Geral
 
 A aplicação simula uma **notificação de abertura de NIP (Notificação de Intermediação Preliminar)**, com interface clara e botões de confirmação. A interface foi construída com atenção à responsividade e usabilidade, respeitando o layout original do Figma.
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - [React.js](https://reactjs.org/)
 - [Bootstrap](https://react-bootstrap.netlify.app/)
@@ -19,7 +19,7 @@ A aplicação simula uma **notificação de abertura de NIP (Notificação de In
 
 ---
 
-## 🧪 Como Rodar Localmente
+## Como Rodar Localmente
 
 1. Clone o repositório:
 
@@ -49,7 +49,7 @@ A aplicação estará disponível em `http://localhost:3000`.
 
 ---
 
-## 📁 Estrutura de Pastas
+## Estrutura de Pastas
 
 ```
 src/
@@ -64,7 +64,7 @@ src/
 
 ---
 
-## 📬 Contato
+## Contato
 
 **Gustavo Barboza**  
 📧 gustabarboza37@gmail.com  
@@ -72,7 +72,7 @@ src/
 
 ---
 
-## 🚀 Veja em Funcionamento
+## Veja em Funcionamento
 
 Você pode acessar o projeto em funcionamento neste link:
 
