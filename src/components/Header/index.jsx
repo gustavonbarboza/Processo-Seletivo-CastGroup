@@ -5,7 +5,7 @@ import IconTelessaude from "../../assets/icons/icon-telessaude.svg";
 
 function Header() {
   return (
-    <div className="bg-white border-bottom py-2">
+    <div className="border-bottom py-2">
       <Container fluid>
         <Row className="align-items-center justify-content-between flex-wrap px-3 gap-3 gap-md-0">
 
